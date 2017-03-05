@@ -7,4 +7,5 @@ coverage/
 dist/
 node_modules/
 src/**/*.js*
+test/src/*.js*
 npm-debug.log
