@@ -1,7 +1,7 @@
 {
   "name": "module-structure-lang-js",
   "version": "1.0.3",
-  "description": "JavaScript language plugin for module-structure.",
+  "description": "JavaScript language provider for module-structure.",
   "author": "Reinhold Früsmer",
   "license": "MIT",
   "bugs": {
