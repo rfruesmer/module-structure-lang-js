@@ -21,6 +21,29 @@ Example:
 $ npm i -g module-structure-lang-js
 </code></pre>
 
+## Config
+To set custom settings, create a **.module-structure.js** in your root folder, like .eslintrc.js or babel.config.js.
+Add the config parameter under the key "module-structure-lang-js"
+
+Example: 
+<pre><code>
+module.exports = {
+ 'module-structure-lang-js': {
+   webpackConfig: "path/to/your/project/webpack/config.js
+ }
+};
+</code></pre>
+
+Config parameter:
+<table align="center">
+    <tr>
+        <td>webpackConfig</td>
+        <td align="right">
+            Use the webpack config to resolve webpack aliases.
+        </td>
+    </tr>
+</table>
+
 ## Credits
 
 <table align="center">
