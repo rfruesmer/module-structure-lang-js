@@ -11,7 +11,38 @@ See <a href="https://www.npmjs.com/package/module-structure">module-structure</a
 
 ## Installation
 
-This extension is bundled with module-structure, so there's no separate installation required.
+This  extension is optional and not bundled with module-structure, therefore requires separate installation. Local and global installation is supported.
+
+After installation of this extension, it is automatically detected by module-structure and used for analyzing JavaScript dependencies.
+
+Example:
+
+<pre><code>$ npm i -g module-structure
+$ npm i -g module-structure-lang-js
+</code></pre>
+
+## Config
+To set custom settings, create a **.module-structure.js** in your root folder, like .eslintrc.js or babel.config.js.
+Add the config parameter under the key "module-structure-lang-js"
+
+Example: 
+<pre><code>
+module.exports = {
+ 'module-structure-lang-js': {
+   webpackConfig: "path/to/your/project/webpack/config.js
+ }
+};
+</code></pre>
+
+Config parameter:
+<table align="center">
+    <tr>
+        <td>webpackConfig</td>
+        <td align="right">
+            Use the webpack config to resolve webpack aliases.
+        </td>
+    </tr>
+</table>
 
 ## Credits
 
