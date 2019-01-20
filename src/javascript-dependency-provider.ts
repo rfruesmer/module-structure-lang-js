@@ -9,12 +9,11 @@ export class JavaScriptDepencencyProvider {
 
     constructor() {
         this.config = JavaScriptDepencencyProvider.loadConfig();
-        console.warn(this.config);
     }
 
     private static loadConfig(): any {
         const configPath = process.cwd() + "/.module-structure.js";
-        const config = fs.existsSync(configPath) ? require(configPath) : require("./defaultConfig");
+        const config = fs.existsSync(configPath) ? require(configPath) : require("../conf/defaultConfig");
         return config["module-structure-lang-js"];
     }
 

@@ -29,7 +29,7 @@ Example:
 <pre><code>
 module.exports = {
  'module-structure-lang-js': {
-   webpackConfig: "path/to/your/project/webpack/config.js
+   webpackConfig: "path/to/your/project/webpack/config.js"
  }
 };
 </code></pre>
